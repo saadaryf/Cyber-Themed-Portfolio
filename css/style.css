@@ -292,7 +292,7 @@ nav a:hover i::after {
 
 /* 1st Page */
 .firstSection {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/bg.jpg');
     position: relative;
     text-align: center;
     height: 100vh;
@@ -419,7 +419,7 @@ h4 {
 /* 2nd Page */
 .secondSection {
     height: 120vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/bg2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./img/bg2.jpg');
     background-position-y: 61%;
 }
 
