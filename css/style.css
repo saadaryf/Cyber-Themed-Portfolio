@@ -36,7 +36,7 @@ html {
 /*cursor icon made by Author: freepik on website www.faticon.com */
 
 body {
-    /* cursor: url('/img/cursor.png'), auto; */
+    /* cursor: url('img/cursor.png'), auto; */
     position: relative;
     background-color: #ffffe4;
     overflow-y: auto;
@@ -292,7 +292,7 @@ nav a:hover i::after {
 
 /* 1st Page */
 .firstSection {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/bg.jpg');
     position: relative;
     text-align: center;
     height: 100vh;
@@ -419,7 +419,7 @@ h4 {
 /* 2nd Page */
 .secondSection {
     height: 120vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/bg2.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/bg2.jpg');
     background-position-y: 61%;
 }
 
@@ -699,7 +699,7 @@ h4 {
 /* 3rd Page */
 .thirdSection {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/img/bg3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/bg3.jpg');
     background-position-y: 47%;
 }
 
@@ -755,7 +755,7 @@ h4 {
 /* 4th Page */
 .fourthSection {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('/img/bg4.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('img/bg4.jpg');
     background-position-y: 82%;
 }
 
@@ -809,7 +809,7 @@ h4 {
 .fifthSection {
     height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/img/bg5.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/bg5.jpg');
     background-position-y: 100%;
 }
 
