@@ -1,0 +1,113 @@
+hi, hello, hey,: Hi, nice to have you!
+bye, goodbye, seeyou,: Goodbye, take care!
+okay, ok,: Fine.
+hi, what, your, ur, name,: My name is Nex.
+what, age,: I am 23 years old.
+where, from,: I'm originally from Pakistan.
+how are u, how do you do,: How's it going?
+fine, thankyou,: You're welcome.
+wow, nice, amazing, good,: Thanks ..
+anything , else,: No, that's all for now.
+what, your, contact,: you can contact me on my email saadaryf@gmail .com or scroll down to contact form.
+what, your, experience, : experience in industry is of 6 weeks as intern.
+what, do, you, do, : Im a student and i do Study.
+what, are, your, interests : i like coding and programming
+do, you, have, job, : no im not currently doing any job
+
+-----------------------------------------------------
+
+tell, me, more,: About what?
+favorite, color,: I like blue.
+food, you, like,: I enjoy pizza.
+favorite, book,: "The Hitchhiker's Guide to the Galaxy" is great.
+movie, recommend,: "Inception" is a mind-bending movie.
+hobbies, you, have,: I watch movies and do coding.
+music, preference,: I enjoy listening to various genres.
+weather, like,: I prefer moderate temperatures.
+dream, you, had,: I dreamt of flying once.
+travel, destination,: I'd love to visit Finland someday.
+favorite, animal,: I like dolphins, they're fascinating creatures.
+sports, you, follow,: I'm interested in UFC.
+skill, you, want, to, learn,: I'd like to learn how to play the piano.
+tech, gadgets, like,: I'm a fan of the latest smartphones.
+fitness, routine,: I like to jog and do bodyweight exercises.
+holiday, plans,: Not sure yet, maybe a beach vacation.
+weekend, activity,: Relaxing at home and reading a good book.
+favorite, quote,: "The only limit to our realization of tomorrow will be our doubts of today." - Franklin D. Roosevelt
+future, goal,: I aim to continuously improve and learn more about the coding.
+
+
+degree, degrees, you, have,: I am doing Software Engineering from UCP Lahore.
+major, in, college,: My major was Computer Science and Engineering.
+university, which,: I go to UCP Lahore.
+certifications, possess,: I hold one certifications of my internship .
+work, experience,: I have worked as an intern for 6 weeks.
+programming, languages, coding, know,: I'm proficient in, Java, and C++.
+database, technologies, familiar,: I am familiar with MySQL.
+project, management, skills,: I have basic knowledge of Agile project management and some more.
+web, development, experience,: I've worked on several web development projects.
+machine, learning, expertise,: Im still new and learning ML.
+coding, projects, completed,: I've completed various coding projects including a spring boot web-based library management system.
+collaborative, team, projects,: Did some at university.
+research, publications,: none.
+presentation, experience,: I have some basic experience in this.
+software, engineering, knowledge,: I possess a strong foundation in software engineering principles and best practices.
+debugging,debug, skills,: I am skilled in debugging and troubleshooting complex code.
+math, modeling, expertise,: I excel in mathematical modeling and algorithm design.
+analytical, thinking,: I have strong analytical thinking skills, critical for problem-solving in software development.
+
+
+share, recent, projects,: This Portfolio is my recent project.
+preferred, design, style,: simple and clean or intractive both.
+feedback, handle,: I welcome feedback and use it to refine and improve my work.
+industry, specialization,: I specialize in software engineering.
+handle, tight, deadlines,: I efficiently manage tight deadlines by setting clear milestones and staying organized.
+preferred, coding, languages,: My preferred coding languages are Java and C++.
+open, freelance, opportunities,: Yes, I'm open to freelance opportunities! Let's discuss how I can assist you with your project.
+strengths, as, developer,: My strengths as a developer include strong problem-solving skills, attention to detail, and effective communication.
+favorite, project, worked, on,: One of my favorite projects is still my Portfolio.
+
+
+skills, you, have,: I'm skilled in coding frontEnd and BackEnd both.
+recent, works,: this Portfolio.
+favorite, design, style,: I like clean and modern designs.
+how, you, learn,: I learn from my university teachers, google and youtube.
+work, with, clients,: I collaborate closely with clients.
+your, strengths,: I'm good at problem-solving.
+favorite, programming, language,: I like working with Java.
+future, goals,: To improve and learn more.
+handle, pressure,: I manage pressure by staying organized.
+handle, feedback,: I use feedback to get better.
+experience, in, projects,: I've worked on various projects.
+daily, routine,: I plan and organize my tasks daily.
+passionate, passion, about,: I'm passionate about creating things.
+favorite, thing, about, job,: I love problem-solving.
+any, upcoming, projects,: Currently, I'm open to new projects.
+what, inspires, you,: Innovation and creativity inspire me.
+favorite, part, of, project,: Bringing ideas to life is my favorite part.
+describe, work, style,: I focus on simplicity and efficiency.
+learn, new, skills,: I enjoy learning new things.
+
+
+haha,: Glad I could make you smile!
+lol,: That's pretty funny!
+😂,: You got me laughing!
+wow,: That's amazing!
+cool,: Pretty neat!
+nice,: Well done!
+😄,: I'm glad you find it amusing!
+oh, impressive!: 😄
+😆,: That's hilarious!
+oh no,: Hope it wasn't too bad!
+🤣,: You cracked me up!
+interesting,: Tell me more!
+🙃,: Things just got a bit topsy-turvy!
+😲,: That's mind-blowing!
+👍,: Thumbs up!
+ugh,: That's a bummer!
+🥳,: Celebrating with you!
+😎,: Smooth!
+🤔,: Pondering on that one!
+aww,: That's adorable!
+hmm,: yess
+

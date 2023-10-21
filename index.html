@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="folio.ico" type="image/x-icon">
+    <title>Saad Arif</title>
+</head>
+
+<body>
+    <header>
+        <!-- overlay after opening menu -->
+        <div id="overlay" class="overlay"></div>
+        <!-- chat over bot -->
+        <div class="chat-box">
+            <div id="chat" class="chat"></div>
+            <a class="close-chat-btn" onclick="toggleChat();" title="close-chat">⊘</a>
+            <input type="text" id="user-input" onkeypress="handleKeyPress(event)"
+                placeholder="Ex: What skills you have">
+            <a class="send-msg-btn" onclick="sendMessage();" title="send-msg">⫸</a>
+            <div class="zoom-controls">
+                <a class="joke-btn" id="getDataButton">Joke</a>
+                <a onclick="zoomIn()" title="zoom-in">✚</a>
+                <a onclick="zoomOut()" title="zoom-out">▬</a>
+                <a class="clear-chat-btn" onclick="clearChat();" title="clear-chat">Clear</a>
+            </div>
+        </div>
+        <!-- menu under bot -->
+        <div id="chat-popup" class="chat-popup">
+            <!-- <a onclick="sendHi();">Hi!</a>  -->
+            <a onclick="sendAbout();">About-me</a>
+            <a onclick="toggleChat();">Chat</a>
+            <!-- <a>Facts</a> -->
+            <a onclick="toggleBtns();">▿Hide-Menu</a>
+            <a onclick="sendBye(); closeChat();">⊘Hide-Bot</a>
+        </div>
+        <!-- ai bot  -->
+        <div id="speedcapture" onclick="toggleBtns();" class="ghost face">
+            <div class="arms">
+                <div class="arm"></div>
+                <div class="arm"></div>
+            </div>
+            <div class="inner">
+                <div class="mouth"></div>
+                <div id="popup-text" class="hidden">
+                    <span id="expression"></span>
+                </div>
+            </div>
+        </div>
+        <!-- ham -->
+        <div class="hamburger" onclick="toggleHamMenu(); toggleHamIcon();">
+            <a class="ham-lines" href="#ham">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </a>
+        </div>
+        <!-- menu -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home<i></i></a>
+                </li>
+                <li><a href="#profile">Profile<i></i></a>
+                </li>
+                <li><a href="#qualifications">Experience<i></i></a>
+                </li>
+                <li><a href="#projects">Projects<i></i></a>
+                </li>
+                <li><a href="#contact">Contact<i></i></a>
+                </li>
+                <li><a id="toggle-ghost-btn" onclick="toggleGhost();">Vanish-Bot<i></i></a></li>
+                </li>
+                <li>
+                    <a href="https://cors-anywhere.herokuapp.com/" target="_blank">CORS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- first page -->
+        <div class="firstSection background" id="home">
+            <div class="intro">
+                <h4>Hi,</h4>
+                <h1>I'm Saad Arif</h1>
+                <h6>Full Stack Developer</h6><br />
+                <p>My goal is to become a highly skilled and successful software engineer. I aim to contribute to
+                    innovative projects, develop robust software solutions, and constantly enhance my technical
+                    expertise in areas such as programming languages,software development,and emerging
+                    technologies<br /> like
+                    <span id="intro-span">
+                        <span id="text-container"></span>
+                        <span id="cursor"></span>
+                    </span>
+                </p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/saadaryf" target="_blank"><img src="/img/linkedin.png"
+                        alt="LinkedIn"></a>
+                <a href="https://github.com/saadxdhillon" target="_blank"><img src="/img/github.png" alt="GitHub"></a>
+                <a href="https://www.instagram.com/saadxdhillon" target="_blank"><img src="/img/instagram.png"
+                        alt="Insta"></i></a>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <!-- second page -->
+        <div class="secondSection background" id="profile">
+            <h4>Profile</h4>
+            <div class="leftHalf">
+                <img class="dp" src="/img/myDp.png" alt="Profile Picture" title="View Profile">
+                <div class="profile" id="profileDetails">
+                    <h3>Full Name</h3>
+                    <p>Muhammad Saad Arif Dhillon</p>
+                    <h3>Birth Date</h3>
+                    <p>December 31, 2002</p>
+                    <h3>Occupation</h3>
+                    <p>Student</p>
+                    <h3>Location</h3>
+                    <p>Lahore</p>
+                    <h3>Email</h3>
+                    <p>saadaryf@gmail.com</p>
+                </div>
+            </div>
+            <div class="rightHalf">
+                <img class="skill-img" src="/img/skills.png" alt="Skills Picture" title="View Skills">
+                <div class="skills" id="skills">
+                    <h3>80%</h3>
+                    <p>C++, Java</p>
+                    <h3>90%</h3>
+                    <p>Spring Boot, Java</p>
+                    <h3>75%</h3>
+                    <p>Html, CSS</p>
+                    <h3>30%</h3>
+                    <p>Javascript</p>
+                </div>
+            </div>
+            <div class="middleHalf">
+                <img class="lan-img" src="/img/lan.png" alt="Hello Pic" title="Languages">
+                <div class="lan" id="lan">
+                    <h3>English</h3>
+                    <p>Excellent writer, working on speaking professionally.</p>
+                    <h3>Urdu</h3>
+                    <p>Native</p>
+                    <h3>Punjabi</h3>
+                    <p>Native</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <!-- third page -->
+        <div class="thirdSection background" id="qualifications">
+            <div class="flexing">
+                <div class="left">
+                    <h4><img src="/img/suitcase.png" alt=""> Experience </h4>
+                    <div class="one-data">
+                        <div class="data">
+                            <p><span>➤ </span>Intern</p>
+                            <h3><span>➤ </span>Punjab Information Technology Board (PITB)</h3>
+                            <p><span>➤ </span>August 2023 - September 2023</p>
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4> <img src="/img/graduate.png" alt=""> Education</h4>
+                    <div class="one-data">
+                        <div class="data">
+                            <p><span>➤ </span>Student</p>
+                            <h3><span>➤ </span>University of Central Punjab (UCP) - Lahore</h3>
+                            <p><span>➤ </span>Octuber 2020 - Octuber 2024</p>
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="one-data">
+                        <div class="data">
+                            <p><span>➤ </span>Student</p>
+                            <h3><span>➤ </span>Punjab College of Sciences - Gujranwala</h3>
+                            <p><span>➤ </span>April 2018 - April 2019</p>
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="one-data">
+                        <div class="data">
+                            <p><span>➤ </span>Student</p>
+                            <h3><span>➤ </span>Jadeed Dastgir Ideal High School - Grw (PCC)</h3>
+                            <p><span>➤ </span>April 2018 - April 2019</p>
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="divider"></div>
+        <!-- fourth page -->
+        <div class="fourthSection background" id="projects">
+            <h4>Projects</h4>
+            <div class="project-hangers">
+                <div class="first-three">
+                    <div class="project-container">
+                        <a href="#"><img src="/img/coming-soon.png" alt=""></a>
+                        <div class="project-name">Coming Soon..</div>
+                    </div>
+                    <div class="project-container">
+                        <a href="#"><img src="/img/scholor-chats.png" alt=""></a>
+                        <div class="project-name">Scholor Chats</div>
+                    </div>
+                    <div class="project-container">
+                        <a href="#"><img src="/img/library-manager.png" alt=""></a>
+                        <div class="project-name">Library Manager</div>
+                    </div>
+                </div>
+                <div class="second-three">
+                    <div class="project-container">
+                        <a href="#"><img src="/img/search-engine.png" alt=""></a>
+                        <div class="project-name">Search Engine</div>
+                    </div>
+                    <div class="project-container">
+                        <a href="#"><img src="/img/mart-database.png" alt=""></a>
+                        <div class="project-name">Mart Database</div>
+                    </div>
+                    <div class="project-container">
+                        <a href="#"><img src="/img/food-ordering.png" alt=""></a>
+                        <div class="project-name">Food Orderring</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <!-- fifth page -->
+        <div class="fifthSection background" id="contact">
+            <h4>Contact</h4>
+            <div class="contact-box">
+                <form action="#">
+                    <input type="text" name="name" placeholder="Name" required /><br />
+                    <input type="email" name="email" placeholder="Email" /><br />
+                    <input type="text" name="subject" placeholder="Subject" required /><br />
+                    <textarea name="textarea" cols="20" rows="3" placeholder="Message"></textarea><br />
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="footer-content">
+                <div class="about-contact">
+                    <p>Email: <span>saadaryf@gmail.com</span></p>
+                    <p>Cell: <span>+92 324 2037312</span></p>
+                    <p>Address: <span>Architects Engineers Housing Society Lahore, Pakistan</span></p>
+                </div>
+                <div class="copyright">
+                    <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span
+                            property="dct:title">Cyber Portfolio</span> Design & Developed<br/> by <a
+                            rel="cc:attributionURL dct:creator" property="cc:attributionName"
+                            href="https://github.com/saadaryf">Saad Arif</a> is licensed
+                        <br/> under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank"
+                            rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0</a></p>
+                    <p>Click <a href="#">here</a> to see all credits.</p>
+                </div>
+                <div class="social-footer">
+                    <a href="https://www.linkedin.com/in/saadaryf" target="_blank"><img src="/img/linkedin.png"
+                            alt="LinkedIn"></a>
+                    <a href="https://github.com/saadxdhillon" target="_blank"><img src="/img/github.png"
+                            alt="GitHub"></a>
+                    <a href="https://www.instagram.com/saadxdhillon" target="_blank"><img src="/img/instagram.png"
+                            alt="Insta"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="js/jokes.mjs"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

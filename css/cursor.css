@@ -1,0 +1,329 @@
+#speedcapture {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 44px;
+  right: 10%;
+  background: rgba(151, 20, 211, 0.3);
+  transition: 0s ease-in-out;
+  border-radius: 40%;
+  animation: swirl 2s ease-in-out infinite alternate;
+  transform: translateX(-100px);
+  z-index: -9;
+  animation-play-state: running;
+}
+#speedcapture:hover{
+  animation-play-state: paused;
+}
+.chat-box {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  max-width: 400px;
+  position: fixed;
+  bottom: 185px;
+  right: 20px;
+  display: none;
+}
+.chat-box a{
+  user-select: none;
+}
+.chat-box a:hover{
+  color: #ff00ff;
+  cursor: pointer;
+}
+.chat-box.on{
+  display: block;
+}
+
+.chat-box input {
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 5px;
+  width: 200px;
+  background: transparent;
+  caret-color: #fff;
+  color: #fff;
+  transition: border-bottom 0.3s; 
+  outline: none;
+}
+
+.chat-box input:focus {
+  border-bottom: 1px solid #ff00ff !important;
+}
+
+
+.chat {
+  margin-left: 12px;
+  padding: 10px;
+  max-height: 200px;
+  max-width: 200px;
+  line-break: auto;
+  overflow-y: auto;
+}
+.zoom-controls {
+  margin-left: 100px;
+  margin-top: 0px;
+}
+.zoom-controls a{
+  user-select: none;
+  border: 0px solid !important;
+  /* background: gray; */
+  color: #fff;
+  font-size: 15px;
+  padding: 0px 1px;
+}
+.zoom-controls a:nth-child(2){
+  padding: 0px 2px;
+}
+.zoom-controls a:hover{
+  color: gray;
+}
+.joke-btn{
+  margin-left: -75px;
+}
+.user-message {
+  display: flex;
+  justify-content: right;
+  color: #ff00ff;
+}
+.bot-message {
+  color: rgb(255, 255, 255);
+  padding-top: 15px;
+}
+.yellow-msg{
+  color: yellow !important;
+}
+.red-msg{
+  color: red !important;
+  font-size: 10px;
+}
+#chat-popup {
+  padding: 0px 20px;
+  border-top: 1px solid #ff00ff;
+  border-right: 1px solid #ff00ff;
+  display: none;
+  position: fixed;
+  bottom: 8px;
+  border-top-left-radius: 50px;
+  overflow: hidden;
+  width: 330px;
+  transition: 0.7s ease;
+}
+
+#chat-popup.open {
+  display: block !important;
+  right: 0;
+}
+
+#chat-popup a {
+  user-select: none;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+#chat-popup a:hover {
+  color: #ff00ff;
+}
+
+.ghost.hidden {
+  display: none;
+}
+
+#speedcapture:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(151, 20, 211, 0.1);
+  border-radius: 100%;
+  top: calc(50% - 5px);
+  left: calc(50% - 5px);
+  animation: bubbling 4s linear infinite;
+  filter: blur(5px);
+}
+
+@keyframes bubbling {
+  0% {
+    box-shadow: 50px 150px 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    box-shadow: -100px 0px 0 rgb(186, 125, 205);
+  }
+
+  100% {
+    box-shadow: 50px -150px 0 rgba(255, 255, 255, 0);
+  }
+}
+
+#speedcapture.face .arms {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  left: -10px;
+  top: 45px;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+#speedcapture.face .arms .arm {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 25px;
+  width: 0;
+  border-radius: 100px 0 0 0;
+  border-top: 15px solid rgba(151, 20, 211, 0.3);
+  border-left: 15px solid rgba(151, 20, 211, 0.3);
+  animation: wave 2s ease-in-out infinite alternate;
+  transform-origin: top right;
+  transform: rotate(20deg);
+}
+
+#speedcapture.face .arms .arm:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7.5px solid rgba(151, 20, 211, 0.5);
+  border-right: 7.5px solid rgba(151, 20, 211, 0.5);
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid rgba(151, 20, 211, 0.5);
+  bottom: -29px;
+  left: -15px;
+  transform: rotate(180deg);
+}
+
+
+#speedcapture.face .arms .arm:last-of-type {
+  left: auto;
+  right: 0;
+  transform-origin: top left;
+  border-radius: 0 100px 0 0;
+  border-top: 15px solid rgba(151, 20, 211, 0.3);
+  border-right: 15px solid rgba(151, 20, 211, 0.3);
+  border-left: none;
+}
+
+#speedcapture.face .arms .arm:last-of-type:before {
+  left: auto;
+  right: -15px;
+}
+
+@keyframes wave {
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+#speedcapture.face .inner {
+  position: absolute;
+  width: 100%;
+  height: 97%;
+  border-radius: 100%;
+  animation: look1 4s ease infinite;
+  transition: 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+#speedcapture.face .inner.hovered {
+  height: 109%;
+}
+#speedcapture.face .inner.up{
+  height: 80%;
+}
+
+
+@keyframes look1 {
+  0% {
+    transform: translateX(-20px) rotateY(-10deg);
+  }
+
+  25% {
+    transform: translateX(20px) rotateY(10deg);
+  }
+
+  75% {
+    transform: translateX(-20px) rotateY(-10deg);
+  }
+
+  100% {
+    transform: translateX(-20px) rotateY(-10deg);
+  }
+}
+
+#speedcapture.face .inner .mouth {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  border-radius: 5px 5px 150px 150px;
+  bottom: 20px;
+  left: 40px;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+#speedcapture.face .inner .mouth.talking {
+  border-radius: 5px;
+  border: 2px solid #000;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  bottom: 19px;
+  left: 39px;
+  animation: talkingAnimation 0.5s infinite;
+}
+
+@keyframes talkingAnimation {
+
+  0%,
+  20%,
+  80%,
+  100% {
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  50% {
+    border-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
+
+#speedcapture.face .inner .mouth:before {
+  content: '';
+  position: absolute;
+  width: 7.5px;
+  height: 7.5px;
+  background: #000;
+  border-radius: 100%;
+  top: -25px;
+  left: -17.5px;
+  box-shadow: 45px 0 0 #000;
+}
+
+#speedcapture.face .inner .mouth.talking:before {
+  background: #ff00ff;
+  box-shadow: 45px 0 0 #ff00ff;
+}
+
+@keyframes swirl {
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+#popup-text {
+  color: #ff00ff;
+  margin-left: -45px;
+  margin-top: -30px;
+  font-size: 19px;
+}
