@@ -6,7 +6,9 @@
     margin: 0;
     padding: 0;
 }
-
+.disabled-link{
+    pointer-events: none;
+}
 /* ::-webkit-scrollbar {                    //custom scroll bar
     width: 8px;
   }
